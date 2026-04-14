@@ -1,6 +1,6 @@
 # Greg Deveau Portfolio
 
-Professional developer portfolio built as a client-side web application with Vite, vanilla JavaScript, Tailwind CSS v4, and the GitHub API.
+Professional portfolio built as a client-side web application with Vite, vanilla JavaScript, Tailwind CSS v4, and the GitHub API, with emphasis on systems, infrastructure, networking, support, and automation strengths.
 
 ## Live Site
 
@@ -10,12 +10,12 @@ GitHub Pages target:
 
 ## Project Overview
 
-This project was built for the PROG2700 MP3 / final assignment. The goal is to present a professional portfolio that behaves like an application instead of a static one-page site. Projects, skills, and contact cards are driven by JavaScript data, while the GitHub section retrieves live repository information from the GitHub API.
+This project was built for the PROG2700 MP3 / final assignment. The goal is to present a professional portfolio that behaves like an application instead of a static one-page site. The content is structured around Greg Deveau's background in systems, infrastructure, networking, Docker, and IT support, while the GitHub section retrieves live public repository information from the GitHub API.
 
 ## Features
 
 - Responsive portfolio layout with hero, about, skills, projects, API, contact, and footer sections
-- Skills and project content rendered dynamically from JavaScript data
+- Skills and experience-based case studies rendered dynamically from JavaScript data
 - Project search and category filtering
 - Theme toggle with persisted preference
 - Project detail modal for deeper project summaries
@@ -35,6 +35,13 @@ This project was built for the PROG2700 MP3 / final assignment. The goal is to p
 - PostCSS
 - GitHub Pages
 - gh-pages
+
+## Experience Focus
+
+- Linux, Docker, Windows Server, and reverse proxy fundamentals
+- TCP/IP, DNS, VLANs, and firewall-oriented networking concepts
+- Technical support, incident management, and IT operations habits
+- PowerShell, Git, and growing full-stack/application development skills
 
 ## Setup
 

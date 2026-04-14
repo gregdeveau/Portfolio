@@ -4,106 +4,107 @@ const USERNAME = "gregdeveau";
 
 const profile = {
   name: "Greg Deveau",
-  role: "Client-Side Developer in Training",
-  headline: "Front-end work that feels clear, lively, and grounded in real data.",
+  role: "Systems, Networking, and Infrastructure-Focused Technologist",
+  headline: "Systems, networking, and infrastructure experience backed by Docker, Linux, and hands-on support work.",
   intro:
-    "This portfolio is built like an application, not a static brochure. It uses structured JavaScript data, interactive UI patterns, and live GitHub API content.",
+    "My background is strongest in systems administration, networking, and IT operations. This portfolio presents that experience as an application, using structured JavaScript content and live GitHub API data while highlighting the technical areas I want employers to notice first.",
   about:
-    "I like building browser experiences that balance clarity, responsiveness, and practical features. My best work starts with a strong structure, then adds motion and interactivity where they actually help.",
+    "I enjoy the side of technology where infrastructure, networking, and application delivery overlap. My experience includes Linux environments, Windows Server coursework, Docker-based workflows, reverse proxy setup, and the kind of troubleshooting mindset that comes from real support and systems work.",
   goals:
-    "I am focused on strengthening JavaScript fundamentals, sharpening UI judgment, and turning class projects into portfolio pieces that feel publishable.",
+    "I am building toward roles where systems knowledge, automation, support experience, and full-stack fundamentals all matter. Right now that means continuing to strengthen scripting and application development while leaning into the infrastructure and networking skills I already have.",
 };
 
 const skills = [
   {
-    title: "Languages",
-    copy: "Tools for browser logic, structure, and presentation.",
-    items: ["JavaScript", "HTML5", "CSS3", "SQL", "Python"],
+    title: "Systems & Infrastructure",
+    copy: "The core platform and environment skills I would want employers to notice first.",
+    items: ["Linux", "Docker", "Windows Server", "Nginx / Reverse Proxy"],
   },
   {
-    title: "Tools",
-    copy: "Workflow tools for building, debugging, and shipping work.",
-    items: ["VS Code", "Git", "GitHub", "Chrome DevTools", "Command Line"],
+    title: "Networking & Security",
+    copy: "The networking and security areas that support stable, well-configured environments.",
+    items: ["TCP/IP & DNS", "VLANs", "Firewalls", "SSL/TLS"],
   },
   {
-    title: "Technologies",
-    copy: "Modern patterns for responsive, data-driven web apps.",
-    items: ["Tailwind CSS v4", "Vite", "GitHub API", "GitHub Pages", "Responsive Design"],
+    title: "Operations & Automation",
+    copy: "The operational skills that connect technical support, scripting, and day-to-day delivery.",
+    items: ["Technical Support", "Incident Management", "PowerShell", "Git"],
   },
 ];
 
 const projects = [
   {
-    id: "portfolio",
-    title: "Professional Developer Portfolio",
-    category: "ui",
-    summary: "A GitHub Pages-ready portfolio with dynamic rendering, theme control, and live repository data.",
-    challenge: "Turn a course brief into something that behaves like an application.",
-    outcome: "Built a responsive portfolio with search, filters, modal details, and deployment-ready tooling.",
-    tech: ["JavaScript", "Tailwind CSS v4", "Vite", "GitHub Pages"],
+    id: "systems-labs",
+    title: "Systems Administration and Infrastructure Labs",
+    category: "systems",
+    summary: "Hands-on work centered on Linux, Windows Server coursework, remote administration, and understanding how systems fit together under real constraints.",
+    challenge: "Build confidence across operating systems, administrative tasks, and troubleshooting workflows without losing sight of the bigger environment.",
+    outcome: "Strengthened the kind of structured problem-solving that supports systems administration, infrastructure work, and technical support roles.",
+    tech: ["Linux", "Windows Server", "RDP / SSH", "Systems Administration"],
     highlights: [
-      "Projects and skills render from JavaScript arrays.",
-      "Theme toggling, project filtering, and modal details add interactivity.",
-      "Deployment scripts are ready for GitHub Pages.",
-    ],
-    link: "https://github.com/gregdeveau/Portfolio",
-    label: "Portfolio Repo",
-  },
-  {
-    id: "repo-radar",
-    title: "Repo Radar",
-    category: "api",
-    summary: "A repository explorer concept focused on clean async states and readable GitHub data.",
-    challenge: "Handle loading, empty, and error states without making the UI feel brittle.",
-    outcome: "Created a GitHub panel that explains the state of every API request clearly.",
-    tech: ["Fetch API", "JSON", "Async JavaScript", "State Management"],
-    highlights: [
-      "Loads live repositories from GitHub.",
-      "Filters to recent non-fork projects.",
-      "Supports refresh and retry flows.",
+      "Worked with both Linux and Windows-oriented environments.",
+      "Built experience with administrative access, configuration, and troubleshooting.",
+      "Developed stronger infrastructure instincts rather than staying purely application-focused.",
     ],
     link: "https://github.com/gregdeveau",
     label: "GitHub Profile",
   },
   {
-    id: "interaction-lab",
-    title: "Interaction Lab",
-    category: "javascript",
-    summary: "A small collection of UI patterns centered on DOM updates and event-driven state.",
-    challenge: "Keep the code approachable while making the interface feel alive.",
-    outcome: "Combined search, filters, and modal patterns into a reusable portfolio structure.",
-    tech: ["DOM Manipulation", "Event Listeners", "Accessibility", "State Objects"],
+    id: "docker-workflows",
+    title: "Container and Reverse Proxy Workflows",
+    category: "docker",
+    summary: "Practical experience with Docker, container-based thinking, and reverse proxy concepts that support cleaner service delivery.",
+    challenge: "Move from isolated tools to a more connected view of how services are packaged, exposed, and managed.",
+    outcome: "Built a stronger foundation for modern infrastructure and deployment workflows, especially where containers and proxy layers meet.",
+    tech: ["Docker", "Nginx", "Reverse Proxy", "Service Configuration"],
     highlights: [
-      "Uses event listeners for immediate UI updates.",
-      "Keeps interaction state predictable.",
-      "Favors useful feedback over decorative motion.",
+      "Used Docker as part of learning repeatable service setup.",
+      "Worked with reverse proxy concepts that improve routing and exposure of services.",
+      "Connected infrastructure thinking to the way modern applications are delivered.",
     ],
     link: "https://github.com/gregdeveau",
-    label: "Code Archive",
+    label: "GitHub Profile",
   },
   {
-    id: "launch-dashboard",
-    title: "Launch Checklist Dashboard",
-    category: "ui",
-    summary: "A dashboard concept for tracking what a small front-end release still needs before shipping.",
-    challenge: "Translate workflow steps into a visual system that feels motivating instead of noisy.",
-    outcome: "Defined a card-based visual language that can support future case studies.",
-    tech: ["Responsive Layout", "Card Systems", "Visual Hierarchy", "Content Design"],
+    id: "networking-practice",
+    title: "Network Configuration and Troubleshooting",
+    category: "networking",
+    summary: "Networking practice focused on foundational protocols, segmentation, device behavior, and understanding how connectivity problems are solved methodically.",
+    challenge: "Translate network theory into usable troubleshooting steps and configuration decisions that make sense in real environments.",
+    outcome: "Built stronger confidence in the fundamentals employers expect to see in networking and infrastructure support roles.",
+    tech: ["TCP/IP", "DNS", "VLANs", "Firewalls"],
     highlights: [
-      "Uses clear section pacing and hierarchy.",
-      "Balances warmth and structure in the UI.",
-      "Creates room for future project growth.",
+      "Worked through the practical side of network configuration and diagnosis.",
+      "Built familiarity with layered troubleshooting rather than one-step fixes.",
+      "Developed a stronger understanding of how network reliability supports everything above it.",
     ],
-    link: "https://github.com/gregdeveau/Portfolio",
-    label: "Portfolio Repo",
+    link: "https://github.com/gregdeveau",
+    label: "GitHub Profile",
+  },
+  {
+    id: "support-automation",
+    title: "IT Support and Automation Practice",
+    category: "support",
+    summary: "Experience rooted in technical support, incident handling, and the operational habits that keep environments and users moving forward.",
+    challenge: "Balance troubleshooting, communication, and process while still building deeper technical skills in scripting and development.",
+    outcome: "Built a practical foundation for roles that sit between user support, systems work, and broader infrastructure responsibility.",
+    tech: ["Technical Support", "Incident Management", "PowerShell", "PostgreSQL"],
+    highlights: [
+      "Worked with ticketing and incident-driven support workflows.",
+      "Used PowerShell, Git, and coursework-based scripting to build automation habits.",
+      "Continued growing toward full-stack and infrastructure-adjacent technical roles.",
+    ],
+    link: "https://github.com/gregdeveau",
+    label: "GitHub Profile",
   },
 ];
 
 const filters = [
   { value: "all", label: "All" },
-  { value: "javascript", label: "JavaScript" },
-  { value: "api", label: "API" },
-  { value: "ui", label: "UI / UX" },
+  { value: "systems", label: "Systems" },
+  { value: "networking", label: "Networking" },
+  { value: "docker", label: "Docker" },
+  { value: "support", label: "Support" },
 ];
 
 const contacts = [
@@ -116,7 +117,7 @@ const contacts = [
   {
     title: "Portfolio Repository",
     value: "github.com/gregdeveau/Portfolio",
-    note: "This portfolio is versioned and deployed from the same repo.",
+    note: "This portfolio app is versioned and deployed from the same repository, even while my public project history is still growing.",
     href: "https://github.com/gregdeveau/Portfolio",
   },
   {
@@ -133,7 +134,7 @@ const state = {
   theme: getTheme(),
   repos: [],
   githubStatus: "idle",
-  githubMessage: "Live repository data will appear here after the first request.",
+  githubMessage: "This section loads public GitHub data live, even while my public repository history is still growing.",
   activeProjectId: null,
 };
 
@@ -236,7 +237,7 @@ function renderShell() {
             <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
               <div class="panel p-6 sm:p-8">
                 <p class="section-kicker">About</p>
-                <h2 class="section-title">A professional story built around clarity, interaction, and steady growth.</h2>
+                <h2 class="section-title">Infrastructure-minded problem solving with room to keep growing into automation and development.</h2>
               </div>
               <div class="grid gap-6 md:grid-cols-2">
                 <article class="panel p-6 sm:p-8">
@@ -255,8 +256,8 @@ function renderShell() {
         <section id="skills" class="section-wrap">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p class="section-kicker">Skills</p>
-            <h2 class="section-title">Languages, tools, and technologies.</h2>
-            <p class="section-copy">This section is rendered from JavaScript data so it can grow with the portfolio.</p>
+            <h2 class="section-title">The major strengths I want employers to recognize first.</h2>
+            <p class="section-copy">This is a curated skill set rather than a full inventory, with emphasis on systems, networking, infrastructure, support, and automation.</p>
             <div id="skills-grid" class="mt-8 grid gap-6 lg:grid-cols-3"></div>
           </div>
         </section>
@@ -266,11 +267,11 @@ function renderShell() {
             <div class="mb-8 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
               <div>
                 <p class="section-kicker">Projects</p>
-                <h2 class="section-title">Search the project set and open any card for more detail.</h2>
+                <h2 class="section-title">Experience-based case studies built around the work I actually do.</h2>
               </div>
               <div class="panel p-5 sm:p-6">
-                <label class="small-label" for="project-search">Project search</label>
-                <input id="project-search" class="input-shell mt-3" type="search" placeholder="Search by title, category, or technology" />
+                <label class="small-label" for="project-search">Experience search</label>
+                <input id="project-search" class="input-shell mt-3" type="search" placeholder="Search by role area, topic, or technology" />
                 <div id="filter-bar" class="mt-4 flex flex-wrap gap-3"></div>
                 <p id="project-summary" class="mt-4 text-sm text-[var(--text-soft)]" aria-live="polite"></p>
               </div>
@@ -284,8 +285,8 @@ function renderShell() {
             <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
               <div class="max-w-3xl">
                 <p class="section-kicker">GitHub API</p>
-                <h2 class="section-title">Recent repositories, loaded live from GitHub.</h2>
-                <p class="section-copy">The interface supports loading, empty, success, and error states.</p>
+                <h2 class="section-title">Public repositories, loaded live from GitHub.</h2>
+                <p class="section-copy">My public GitHub history is still growing, but this section still demonstrates live API integration with proper loading, empty, success, and error states.</p>
               </div>
               <button id="refresh-repos" class="secondary-button text-sm font-semibold" type="button">Refresh Repositories</button>
             </div>
@@ -297,7 +298,7 @@ function renderShell() {
         <section id="contact" class="section-wrap pb-20">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p class="section-kicker">Contact</p>
-            <h2 class="section-title">Professional links that are safe to publish.</h2>
+            <h2 class="section-title">Professional links and public contact details.</h2>
             <div id="contact-grid" class="mt-8 grid gap-6 lg:grid-cols-3"></div>
           </div>
         </section>
@@ -564,7 +565,7 @@ function renderGitHub() {
     grid.innerHTML = `
       <article class="panel p-6 sm:p-8">
         <h3 class="text-xl font-semibold text-[var(--text-strong)]">No repositories found</h3>
-        <p class="mt-3 leading-7 text-[var(--text-soft)]">The request succeeded, but there were no matching public repositories to show.</p>
+        <p class="mt-3 leading-7 text-[var(--text-soft)]">The API request succeeded, but my public repository list is still too small to show matching results here.</p>
       </article>
     `;
     return;
@@ -573,10 +574,14 @@ function renderGitHub() {
   state.repos.forEach((repo) => {
     const card = document.createElement("article");
     card.className = "panel flex h-full flex-col p-6 sm:p-7";
-    card.innerHTML = `
-      <h3 class="text-2xl font-semibold text-[var(--text-strong)]">${repo.name}</h3>
-      <p class="mt-3 flex-1 leading-7 text-[var(--text-soft)]">${repo.description || "No description has been added to this repository yet."}</p>
-    `;
+
+    const title = document.createElement("h3");
+    title.className = "text-2xl font-semibold text-[var(--text-strong)]";
+    title.textContent = repo.name;
+
+    const description = document.createElement("p");
+    description.className = "mt-3 flex-1 leading-7 text-[var(--text-soft)]";
+    description.textContent = repo.description || "No description has been added to this repository yet.";
 
     const meta = document.createElement("div");
     meta.className = "mt-5 flex flex-wrap gap-2";
@@ -593,7 +598,7 @@ function renderGitHub() {
     link.rel = "noreferrer noopener";
     link.textContent = "Open Repository";
 
-    card.append(meta, link);
+    card.append(title, description, meta, link);
     grid.appendChild(card);
   });
 }
@@ -624,8 +629,8 @@ async function loadRepos() {
     state.githubStatus = "success";
     state.githubMessage =
       state.repos.length > 0
-        ? `Showing ${state.repos.length} recent non-fork repositories from ${USERNAME}.`
-        : `GitHub returned data for ${USERNAME}, but there were no non-fork repositories to display.`;
+        ? `Showing ${state.repos.length} recent public repositories from ${USERNAME}.`
+        : `GitHub returned data for ${USERNAME}, but the public repository list is still very small.`;
   } catch (error) {
     console.error(error);
     state.repos = [];
