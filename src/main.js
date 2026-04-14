@@ -7,9 +7,9 @@ const profile = {
   role: "Systems and Infrastructure Focused IT Professional",
   headline: "I am most at home working with systems, networking, Docker, and the kind of troubleshooting that keeps things running.",
   intro:
-    "Most of my experience is on the systems and IT side: Linux, networking, Docker, support work, and figuring out why something broke. This portfolio is my way of putting that in one place while still meeting the assignment requirements with live GitHub data and interactive UI.",
+    "Most of my experience is on the systems and IT side: Linux, networking, Docker, support work, and figuring out why something broke. A good example is the Linux home lab I built around containers, storage, monitoring, and secure remote access. This portfolio is my way of putting that in one place while still meeting the assignment requirements with live GitHub data and interactive UI.",
   about:
-    "I like the part of tech where servers, networks, and applications all meet. I have spent more time around Linux, Windows Server coursework, reverse proxies, and hands-on support than building public apps, and I wanted this portfolio to reflect that honestly.",
+    "I like the part of tech where servers, networks, and applications all meet. I have spent more time around Linux, Windows Server coursework, reverse proxies, self-hosting, and hands-on support than building public apps, and I wanted this portfolio to reflect that honestly.",
   goals:
     "I am aiming for roles where I can keep growing in systems, infrastructure, automation, and eventually more development work too. Right now I am focused on getting stronger with scripting and full-stack concepts without losing the operations background that fits me best.",
 };
@@ -50,17 +50,17 @@ const projects = [
     label: "GitHub Profile",
   },
   {
-    id: "docker-workflows",
-    title: "Docker and Reverse Proxy Work",
+    id: "homelab",
+    title: "Self-Hosted Linux Home Lab",
     category: "docker",
-    summary: "This is where I started getting more comfortable with Docker, service setup, and the basics of reverse proxying.",
-    challenge: "The real challenge was going from isolated tools to understanding how services are packaged, exposed, and managed together.",
-    outcome: "It gave me a stronger foundation for modern infrastructure and deployment workflows.",
-    tech: ["Docker", "Nginx", "Reverse Proxy", "Service Configuration"],
+    summary: "I built a Linux-based home lab around Docker containers, media services, monitoring, secure remote access, and a storage layout designed to fit my own needs.",
+    challenge: "The hard part was building something flexible and useful without leaning on a paid platform, while still keeping storage, monitoring, and remote access manageable.",
+    outcome: "It gave me real hands-on experience with self-hosting, containerized services, observability, storage design, and safer remote access decisions.",
+    tech: ["Docker", "mergerFS", "Grafana", "WireGuard"],
     highlights: [
-      "Used Docker while learning more repeatable ways to set services up.",
-      "Worked with reverse proxy concepts for routing and exposing services cleanly.",
-      "Started connecting infrastructure ideas to the way real apps get delivered.",
+      "Runs Plex, Sonarr, Radarr, Grafana, and Prometheus in Docker.",
+      "Uses a 12 TB NAS drive, a cache drive, and mergerFS to present storage as one logical volume.",
+      "Uses Tailscale, WireGuard, and UFW, with only the WireGuard port forwarded instead of exposing web UIs directly.",
     ],
     link: "https://github.com/gregdeveau",
     label: "GitHub Profile",
@@ -103,7 +103,7 @@ const filters = [
   { value: "all", label: "All" },
   { value: "systems", label: "Systems" },
   { value: "networking", label: "Networking" },
-  { value: "docker", label: "Docker" },
+  { value: "docker", label: "Docker / Home Lab" },
   { value: "support", label: "Support" },
 ];
 

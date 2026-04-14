@@ -10,7 +10,7 @@ GitHub Pages target:
 
 ## Project Overview
 
-This project was built for the PROG2700 MP3 / final assignment. The goal is to present a professional portfolio that behaves like an application instead of a static one-page site. The content is structured around Greg Deveau's background in systems, infrastructure, networking, Docker, and IT support, while the GitHub section retrieves live public repository information from the GitHub API.
+This project was built for the PROG2700 MP3 / final assignment. The goal is to present a professional portfolio that behaves like an application instead of a static one-page site. The content is structured around Greg Deveau's background in systems, infrastructure, networking, Docker, and IT support, including a self-hosted Linux home lab that uses Docker, monitoring tools, secure remote access, and a custom storage setup.
 
 ## Features
 
@@ -42,6 +42,7 @@ This project was built for the PROG2700 MP3 / final assignment. The goal is to p
 - TCP/IP, DNS, VLANs, and firewall-oriented networking concepts
 - Technical support, incident management, and IT operations habits
 - PowerShell, Git, and growing full-stack/application development skills
+- Self-hosted home lab design with Grafana, Prometheus, mergerFS, Tailscale, WireGuard, and media services
 
 ## Setup
 
