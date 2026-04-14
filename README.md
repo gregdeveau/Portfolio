@@ -21,6 +21,7 @@ This project was built for the PROG2700 MP3 / final assignment. The goal is to p
 - Project detail modal for deeper project summaries
 - GitHub API integration with loading, empty, success, and error states
 - GitHub Pages deployment configuration for the `Portfolio` repository
+- Includes a real public website project for Piratesway Jiu-Jitsu
 
 ## API Used
 
@@ -43,6 +44,7 @@ This project was built for the PROG2700 MP3 / final assignment. The goal is to p
 - Technical support, incident management, and IT operations habits
 - PowerShell, Git, and growing full-stack/application development skills
 - Self-hosted home lab design with Grafana, Prometheus, mergerFS, Tailscale, WireGuard, and media services
+- Website work for a real local business with mobile-first design, accessibility, and clear calls to action
 
 ## Setup
 

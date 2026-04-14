@@ -82,20 +82,20 @@ const projects = [
     label: "GitHub Profile",
   },
   {
-    id: "support-automation",
-    title: "IT Support and Automation",
-    category: "support",
-    summary: "A lot of my practical experience comes from support work, ticketing, and the habits that keep users and systems moving.",
-    challenge: "The balancing act here is solving problems quickly while still building deeper technical skills over time.",
-    outcome: "It gave me a solid base for roles that sit between support, systems work, and infrastructure.",
-    tech: ["Technical Support", "Incident Management", "PowerShell", "PostgreSQL"],
+    id: "piratesway-bjj",
+    title: "Piratesway BJJ Website",
+    category: "web",
+    summary: "I built the website for Piratesway Jiu-Jitsu with a focus on being clear, welcoming, and easy for new people to use.",
+    challenge: "The main goal was keeping it simple and mobile-friendly so someone with zero experience could understand the gym and book a class.",
+    outcome: "It gave me real experience building for an actual business with a focus on usability, accessibility, and clear calls to action.",
+    tech: ["HTML", "CSS", "JavaScript", "Cloudflare Pages"],
     highlights: [
-      "Worked with ticketing and incident-driven support workflows.",
-      "Used PowerShell, Git, and coursework scripting to build better automation habits.",
-      "Kept building toward roles that mix support, systems, and technical growth.",
+      "Built for a real local business instead of just a class exercise.",
+      "Focused on mobile-first design, beginner-friendly content, and strong calls to action.",
+      "Considered accessibility and local SEO so the site is useful as well as polished.",
     ],
-    link: "https://github.com/gregdeveau",
-    label: "GitHub Profile",
+    link: "https://www.pirateswaybjj.com",
+    label: "Live Site",
   },
 ];
 
@@ -104,7 +104,7 @@ const filters = [
   { value: "systems", label: "Systems" },
   { value: "networking", label: "Networking" },
   { value: "docker", label: "Docker / Home Lab" },
-  { value: "support", label: "Support" },
+  { value: "web", label: "Website" },
 ];
 
 const contacts = [
