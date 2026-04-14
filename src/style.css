@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+:root,
+html[data-theme="studio"] {
+  color-scheme: light;
+  --page: #f6efe3;
+  --page-accent: #ffd3b0;
+  --page-accent-2: #c4efe6;
+  --surface: rgba(255, 249, 242, 0.76);
+  --surface-strong: rgba(255, 252, 247, 0.92);
+  --line: rgba(18, 40, 54, 0.12);
+  --text-strong: #152531;
+  --text-soft: #4d5f68;
+  --brand: #0f766e;
+  --brand-strong: #0b5f58;
+  --accent-soft: rgba(15, 118, 110, 0.12);
+  --shadow: 0 32px 80px -36px rgba(21, 37, 49, 0.38);
+}
+
+html[data-theme="midnight"] {
+  color-scheme: dark;
+  --page: #101922;
+  --page-accent: #12324f;
+  --page-accent-2: #184f4b;
+  --surface: rgba(18, 27, 38, 0.74);
+  --surface-strong: rgba(19, 30, 42, 0.92);
+  --line: rgba(201, 221, 233, 0.12);
+  --text-strong: #eff7fb;
+  --text-soft: #b4c9d5;
+  --brand: #80e3c5;
+  --brand-strong: #54d3ad;
+  --accent-soft: rgba(128, 227, 197, 0.12);
+  --shadow: 0 32px 80px -36px rgba(0, 0, 0, 0.58);
+}
+
+html {
+  background: var(--page);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, var(--page-accent) 0%, transparent 28%),
+    radial-gradient(circle at 80% 20%, var(--page-accent-2) 0%, transparent 26%),
+    linear-gradient(180deg, color-mix(in oklab, var(--page) 92%, white) 0%, var(--page) 100%);
+  color: var(--text-strong);
+  font-family: "Space Grotesk", "Avenir Next", "Segoe UI Variable Display", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 96px 96px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 82%);
+  opacity: 0.3;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+.display-title {
+  font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+a,
+button,
+input {
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+button:hover,
+a:hover {
+  transform: translateY(-1px);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+@layer components {
+  .section-wrap {
+    @apply py-20 md:py-24;
+  }
+
+  .panel {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    @apply rounded-[2rem] backdrop-blur-xl;
+  }
+
+  .inner-panel {
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    @apply rounded-[1.5rem] p-5;
+  }
+
+  .section-kicker,
+  .small-label {
+    @apply text-xs font-bold uppercase tracking-[0.26em];
+    color: var(--brand);
+  }
+
+  .section-title {
+    @apply mt-3 text-4xl leading-tight md:text-5xl;
+    color: var(--text-strong);
+  }
+
+  .section-copy {
+    @apply mt-4 max-w-3xl text-lg leading-8;
+    color: var(--text-soft);
+  }
+
+  .display-title {
+    @apply text-5xl leading-[0.95] md:text-7xl;
+    color: var(--text-strong);
+  }
+
+  .primary-button {
+    background: var(--brand);
+    color: white;
+    @apply inline-flex items-center justify-center rounded-full px-5 py-3 font-semibold shadow-lg shadow-black/5;
+  }
+
+  .primary-button:hover {
+    background: var(--brand-strong);
+  }
+
+  .secondary-button {
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    color: var(--text-strong);
+    @apply inline-flex items-center justify-center rounded-full px-5 py-3;
+  }
+
+  .secondary-button:hover {
+    border-color: var(--brand);
+    color: var(--brand);
+  }
+
+  .metric-card {
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    @apply rounded-[1.6rem] p-5;
+  }
+
+  .metric-label {
+    @apply text-xs font-bold uppercase tracking-[0.2em];
+    color: var(--text-soft);
+  }
+
+  .metric-value {
+    @apply mt-3 text-3xl font-semibold;
+    color: var(--text-strong);
+  }
+
+  .focus-tag,
+  .stack-chip,
+  .project-tag {
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    color: var(--text-soft);
+    @apply rounded-full px-4 py-2 text-sm;
+  }
+
+  .focus-tag {
+    background: color-mix(in oklab, var(--accent-soft) 68%, white);
+    color: var(--brand);
+  }
+
+  .input-shell {
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    color: var(--text-strong);
+    @apply w-full rounded-[1.2rem] px-4 py-3 text-sm shadow-inner shadow-black/5;
+  }
+
+  .input-shell::placeholder {
+    color: var(--text-soft);
+    opacity: 0.75;
+  }
+
+  .filter-button {
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text-soft);
+    @apply rounded-full px-4 py-2 text-sm font-semibold;
+  }
+
+  .filter-button.is-active {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: var(--brand);
+  }
+
+  .status-card {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text-strong);
+    @apply rounded-[1.6rem] p-5 text-base leading-7 shadow-lg shadow-black/5;
+  }
+
+  .status-card[data-tone="error"] {
+    border-color: rgba(205, 92, 92, 0.45);
+  }
+
+  .status-card[data-tone="success"] {
+    border-color: color-mix(in oklab, var(--brand) 45%, var(--line));
+  }
+
+  .modal-card {
+    width: min(720px, 100%);
+    max-height: 88vh;
+    overflow-y: auto;
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    box-shadow: var(--shadow);
+    @apply rounded-[2rem] p-6 sm:p-8;
+  }
+
+  .modal-close {
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text-soft);
+    @apply ml-auto block rounded-full px-4 py-2 text-sm font-semibold;
+  }
+
+  .skeleton-line {
+    background:
+      linear-gradient(
+        90deg,
+        color-mix(in oklab, var(--surface-strong) 88%, black) 0%,
+        color-mix(in oklab, var(--surface-strong) 98%, white) 50%,
+        color-mix(in oklab, var(--surface-strong) 88%, black) 100%
+      );
+    background-size: 240% 100%;
+    animation: shimmer 1.6s linear infinite;
+    @apply rounded-full;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -40% 0;
+  }
+}

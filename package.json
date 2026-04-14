@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Professional developer portfolio built with Vite, Tailwind CSS v4, and the GitHub API.",
+  "type": "module",
+  "homepage": "https://gregdeveau.github.io/Portfolio/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregdeveau/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "vite",
+    "tailwindcss",
+    "github-pages"
+  ],
+  "author": "Greg Deveau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregdeveau/Portfolio/issues"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.9",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.8"
+  }
+}
