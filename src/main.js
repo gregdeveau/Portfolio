@@ -4,30 +4,30 @@ const USERNAME = "gregdeveau";
 
 const profile = {
   name: "Greg Deveau",
-  role: "Systems, Networking, and Infrastructure-Focused Technologist",
-  headline: "Systems, networking, and infrastructure experience backed by Docker, Linux, and hands-on support work.",
+  role: "Systems and Infrastructure Focused IT Professional",
+  headline: "I am most at home working with systems, networking, Docker, and the kind of troubleshooting that keeps things running.",
   intro:
-    "My background is strongest in systems administration, networking, and IT operations. This portfolio presents that experience as an application, using structured JavaScript content and live GitHub API data while highlighting the technical areas I want employers to notice first.",
+    "Most of my experience is on the systems and IT side: Linux, networking, Docker, support work, and figuring out why something broke. This portfolio is my way of putting that in one place while still meeting the assignment requirements with live GitHub data and interactive UI.",
   about:
-    "I enjoy the side of technology where infrastructure, networking, and application delivery overlap. My experience includes Linux environments, Windows Server coursework, Docker-based workflows, reverse proxy setup, and the kind of troubleshooting mindset that comes from real support and systems work.",
+    "I like the part of tech where servers, networks, and applications all meet. I have spent more time around Linux, Windows Server coursework, reverse proxies, and hands-on support than building public apps, and I wanted this portfolio to reflect that honestly.",
   goals:
-    "I am building toward roles where systems knowledge, automation, support experience, and full-stack fundamentals all matter. Right now that means continuing to strengthen scripting and application development while leaning into the infrastructure and networking skills I already have.",
+    "I am aiming for roles where I can keep growing in systems, infrastructure, automation, and eventually more development work too. Right now I am focused on getting stronger with scripting and full-stack concepts without losing the operations background that fits me best.",
 };
 
 const skills = [
   {
     title: "Systems & Infrastructure",
-    copy: "The core platform and environment skills I would want employers to notice first.",
+    copy: "These are the big platform and environment skills I would want an employer to notice first.",
     items: ["Linux", "Docker", "Windows Server", "Nginx / Reverse Proxy"],
   },
   {
     title: "Networking & Security",
-    copy: "The networking and security areas that support stable, well-configured environments.",
+    copy: "These are the networking and security fundamentals I am most comfortable talking about.",
     items: ["TCP/IP & DNS", "VLANs", "Firewalls", "SSL/TLS"],
   },
   {
     title: "Operations & Automation",
-    copy: "The operational skills that connect technical support, scripting, and day-to-day delivery.",
+    copy: "These are the day-to-day skills that connect support work, scripting, and keeping things moving.",
     items: ["Technical Support", "Incident Management", "PowerShell", "Git"],
   },
 ];
@@ -35,64 +35,64 @@ const skills = [
 const projects = [
   {
     id: "systems-labs",
-    title: "Systems Administration and Infrastructure Labs",
+    title: "Systems Labs and Admin Practice",
     category: "systems",
-    summary: "Hands-on work centered on Linux, Windows Server coursework, remote administration, and understanding how systems fit together under real constraints.",
-    challenge: "Build confidence across operating systems, administrative tasks, and troubleshooting workflows without losing sight of the bigger environment.",
-    outcome: "Strengthened the kind of structured problem-solving that supports systems administration, infrastructure work, and technical support roles.",
+    summary: "A lot of my hands-on experience comes from labs and coursework around Linux, Windows Server, remote administration, and learning how systems fit together.",
+    challenge: "The hard part was not just learning each tool on its own, but learning how the whole environment connects.",
+    outcome: "It gave me a much better feel for troubleshooting, configuration, and thinking through systems problems calmly.",
     tech: ["Linux", "Windows Server", "RDP / SSH", "Systems Administration"],
     highlights: [
-      "Worked with both Linux and Windows-oriented environments.",
-      "Built experience with administrative access, configuration, and troubleshooting.",
-      "Developed stronger infrastructure instincts rather than staying purely application-focused.",
+      "Worked in both Linux and Windows-oriented environments.",
+      "Built confidence with access, setup, and troubleshooting tasks.",
+      "Started thinking more like someone responsible for the whole environment, not just one app.",
     ],
     link: "https://github.com/gregdeveau",
     label: "GitHub Profile",
   },
   {
     id: "docker-workflows",
-    title: "Container and Reverse Proxy Workflows",
+    title: "Docker and Reverse Proxy Work",
     category: "docker",
-    summary: "Practical experience with Docker, container-based thinking, and reverse proxy concepts that support cleaner service delivery.",
-    challenge: "Move from isolated tools to a more connected view of how services are packaged, exposed, and managed.",
-    outcome: "Built a stronger foundation for modern infrastructure and deployment workflows, especially where containers and proxy layers meet.",
+    summary: "This is where I started getting more comfortable with Docker, service setup, and the basics of reverse proxying.",
+    challenge: "The real challenge was going from isolated tools to understanding how services are packaged, exposed, and managed together.",
+    outcome: "It gave me a stronger foundation for modern infrastructure and deployment workflows.",
     tech: ["Docker", "Nginx", "Reverse Proxy", "Service Configuration"],
     highlights: [
-      "Used Docker as part of learning repeatable service setup.",
-      "Worked with reverse proxy concepts that improve routing and exposure of services.",
-      "Connected infrastructure thinking to the way modern applications are delivered.",
+      "Used Docker while learning more repeatable ways to set services up.",
+      "Worked with reverse proxy concepts for routing and exposing services cleanly.",
+      "Started connecting infrastructure ideas to the way real apps get delivered.",
     ],
     link: "https://github.com/gregdeveau",
     label: "GitHub Profile",
   },
   {
     id: "networking-practice",
-    title: "Network Configuration and Troubleshooting",
+    title: "Networking and Troubleshooting Practice",
     category: "networking",
-    summary: "Networking practice focused on foundational protocols, segmentation, device behavior, and understanding how connectivity problems are solved methodically.",
-    challenge: "Translate network theory into usable troubleshooting steps and configuration decisions that make sense in real environments.",
-    outcome: "Built stronger confidence in the fundamentals employers expect to see in networking and infrastructure support roles.",
+    summary: "This is the side of my background focused on core networking ideas like TCP/IP, DNS, VLANs, and firewalls.",
+    challenge: "The goal was turning theory into something practical enough to troubleshoot and explain clearly.",
+    outcome: "I came away with a better grasp of the networking basics that show up constantly in infrastructure and support work.",
     tech: ["TCP/IP", "DNS", "VLANs", "Firewalls"],
     highlights: [
-      "Worked through the practical side of network configuration and diagnosis.",
-      "Built familiarity with layered troubleshooting rather than one-step fixes.",
-      "Developed a stronger understanding of how network reliability supports everything above it.",
+      "Worked through the practical side of network setup and diagnosis.",
+      "Got more comfortable with layered troubleshooting instead of guessing.",
+      "Built a better understanding of how much everything else depends on the network working properly.",
     ],
     link: "https://github.com/gregdeveau",
     label: "GitHub Profile",
   },
   {
     id: "support-automation",
-    title: "IT Support and Automation Practice",
+    title: "IT Support and Automation",
     category: "support",
-    summary: "Experience rooted in technical support, incident handling, and the operational habits that keep environments and users moving forward.",
-    challenge: "Balance troubleshooting, communication, and process while still building deeper technical skills in scripting and development.",
-    outcome: "Built a practical foundation for roles that sit between user support, systems work, and broader infrastructure responsibility.",
+    summary: "A lot of my practical experience comes from support work, ticketing, and the habits that keep users and systems moving.",
+    challenge: "The balancing act here is solving problems quickly while still building deeper technical skills over time.",
+    outcome: "It gave me a solid base for roles that sit somewhere between support, systems work, and infrastructure.",
     tech: ["Technical Support", "Incident Management", "PowerShell", "PostgreSQL"],
     highlights: [
       "Worked with ticketing and incident-driven support workflows.",
-      "Used PowerShell, Git, and coursework-based scripting to build automation habits.",
-      "Continued growing toward full-stack and infrastructure-adjacent technical roles.",
+      "Used PowerShell, Git, and coursework scripting to build better automation habits.",
+      "Kept building toward roles that mix support, systems, and technical growth.",
     ],
     link: "https://github.com/gregdeveau",
     label: "GitHub Profile",
@@ -117,7 +117,7 @@ const contacts = [
   {
     title: "Portfolio Repository",
     value: "github.com/gregdeveau/Portfolio",
-    note: "This portfolio app is versioned and deployed from the same repository, even while my public project history is still growing.",
+    note: "This portfolio is built and deployed from the same repository, even though my public project history is still pretty small right now.",
     href: "https://github.com/gregdeveau/Portfolio",
   },
   {
@@ -134,7 +134,7 @@ const state = {
   theme: getTheme(),
   repos: [],
   githubStatus: "idle",
-  githubMessage: "This section loads public GitHub data live, even while my public repository history is still growing.",
+  githubMessage: "This section pulls in live GitHub data, even though my public repo history is still pretty small right now.",
   activeProjectId: null,
 };
 
@@ -237,7 +237,7 @@ function renderShell() {
             <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
               <div class="panel p-6 sm:p-8">
                 <p class="section-kicker">About</p>
-                <h2 class="section-title">Infrastructure-minded problem solving with room to keep growing into automation and development.</h2>
+                <h2 class="section-title">The kind of work I naturally lean toward is systems, troubleshooting, and keeping things running smoothly.</h2>
               </div>
               <div class="grid gap-6 md:grid-cols-2">
                 <article class="panel p-6 sm:p-8">
@@ -256,8 +256,8 @@ function renderShell() {
         <section id="skills" class="section-wrap">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p class="section-kicker">Skills</p>
-            <h2 class="section-title">The major strengths I want employers to recognize first.</h2>
-            <p class="section-copy">This is a curated skill set rather than a full inventory, with emphasis on systems, networking, infrastructure, support, and automation.</p>
+            <h2 class="section-title">These are the main strengths I would want an employer to notice first.</h2>
+            <p class="section-copy">I am keeping this focused on the bigger things that best represent how I work, instead of listing every tool I have touched.</p>
             <div id="skills-grid" class="mt-8 grid gap-6 lg:grid-cols-3"></div>
           </div>
         </section>
@@ -267,7 +267,7 @@ function renderShell() {
             <div class="mb-8 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
               <div>
                 <p class="section-kicker">Projects</p>
-                <h2 class="section-title">Experience-based case studies built around the work I actually do.</h2>
+                <h2 class="section-title">These are more like experience snapshots than polished public projects, which is a more honest picture of where I am right now.</h2>
               </div>
               <div class="panel p-5 sm:p-6">
                 <label class="small-label" for="project-search">Experience search</label>
@@ -285,8 +285,8 @@ function renderShell() {
             <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
               <div class="max-w-3xl">
                 <p class="section-kicker">GitHub API</p>
-                <h2 class="section-title">Public repositories, loaded live from GitHub.</h2>
-                <p class="section-copy">My public GitHub history is still growing, but this section still demonstrates live API integration with proper loading, empty, success, and error states.</p>
+                <h2 class="section-title">My public repositories, loaded live from GitHub.</h2>
+                <p class="section-copy">My GitHub is still a work in progress, but I still wanted this section to use real live data instead of fake placeholders.</p>
               </div>
               <button id="refresh-repos" class="secondary-button text-sm font-semibold" type="button">Refresh Repositories</button>
             </div>
@@ -298,7 +298,7 @@ function renderShell() {
         <section id="contact" class="section-wrap pb-20">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p class="section-kicker">Contact</p>
-            <h2 class="section-title">Professional links and public contact details.</h2>
+            <h2 class="section-title">A few public places to find my work and connect with me.</h2>
             <div id="contact-grid" class="mt-8 grid gap-6 lg:grid-cols-3"></div>
           </div>
         </section>
