@@ -4,25 +4,25 @@ const USERNAME = "gregdeveau";
 
 const profile = {
   name: "Greg Deveau",
-  role: "Systems and Infrastructure Focused IT Professional",
-  headline: "I am most at home working with systems, networking, Docker, and the kind of troubleshooting that keeps things running.",
+  role: "Systems and Infrastructure IT",
+  headline: "I like working with systems, networking, Docker, and the kind of troubleshooting that keeps things running.",
   intro:
-    "Most of my experience is on the systems and IT side: Linux, networking, Docker, support work, and figuring out why something broke. A good example is the Linux home lab I built around containers, storage, monitoring, and secure remote access. This portfolio is my way of putting that in one place while still meeting the assignment requirements with live GitHub data and interactive UI.",
+    "Most of my background is on the systems and IT side: Linux, networking, Docker, support work, and figuring out why something broke. A good example is the Linux home lab I built around containers, storage, monitoring, and secure remote access. This portfolio pulls that together in one place while still using live GitHub data and some simple interactivity.",
   about:
-    "I like the part of tech where servers, networks, and applications all meet. I have spent more time around Linux, Windows Server coursework, reverse proxies, self-hosting, and hands-on support than building public apps, and I wanted this portfolio to reflect that honestly.",
+    "I like the part of tech where servers, networks, and applications all meet. I have spent more time around Linux, Windows Server coursework, reverse proxies, self-hosting, and hands-on support than building public apps, so I wanted the portfolio to reflect that honestly.",
   goals:
-    "I am aiming for roles where I can keep growing in systems, infrastructure, automation, and eventually more development work too. Right now I am focused on getting stronger with scripting and full-stack concepts without losing the operations background that fits me best.",
+    "I want to keep growing in systems, infrastructure, automation, and development. Right now that means getting better with scripting and full-stack concepts without losing the operations background that fits me best.",
 };
 
 const skills = [
   {
     title: "Systems & Infrastructure",
-    copy: "These are the big platform and environment skills I would want an employer to notice first.",
+    copy: "These are the main platform skills I would want an employer to notice first.",
     items: ["Linux", "Docker", "Windows Server", "Nginx / Reverse Proxy"],
   },
   {
     title: "Networking & Security",
-    copy: "These are the networking and security fundamentals I am most comfortable talking about.",
+    copy: "These are the networking and security basics I am most comfortable with.",
     items: ["TCP/IP & DNS", "VLANs", "Firewalls", "SSL/TLS"],
   },
   {
@@ -38,8 +38,8 @@ const projects = [
     title: "Systems Labs and Admin Practice",
     category: "systems",
     summary: "A lot of my hands-on experience comes from labs and coursework around Linux, Windows Server, remote administration, and learning how systems fit together.",
-    challenge: "The hard part was not just learning each tool on its own, but learning how the whole environment connects.",
-    outcome: "It gave me a much better feel for troubleshooting, configuration, and thinking through systems problems calmly.",
+    challenge: "The hard part was learning how the whole environment connects, not just each tool on its own.",
+    outcome: "It gave me a better feel for troubleshooting, configuration, and thinking through systems problems calmly.",
     tech: ["Linux", "Windows Server", "RDP / SSH", "Systems Administration"],
     highlights: [
       "Worked in both Linux and Windows-oriented environments.",
@@ -53,9 +53,9 @@ const projects = [
     id: "homelab",
     title: "Self-Hosted Linux Home Lab",
     category: "docker",
-    summary: "I built a Linux-based home lab around Docker containers, media services, monitoring, secure remote access, and a storage layout designed to fit my own needs.",
-    challenge: "The hard part was building something flexible and useful without leaning on a paid platform, while still keeping storage, monitoring, and remote access manageable.",
-    outcome: "It gave me real hands-on experience with self-hosting, containerized services, observability, storage design, and safer remote access decisions.",
+    summary: "I built a Linux home lab around Docker containers, media services, monitoring, secure remote access, and a storage layout that fits what I actually use.",
+    challenge: "The hard part was building something flexible and useful without relying on a paid platform, while still keeping storage, monitoring, and remote access manageable.",
+    outcome: "It gave me real hands-on experience with self-hosting, containers, monitoring, storage design, and safer remote access decisions.",
     tech: ["Docker", "mergerFS", "Grafana", "WireGuard"],
     highlights: [
       "Runs Plex, Sonarr, Radarr, Grafana, and Prometheus in Docker.",
@@ -69,9 +69,9 @@ const projects = [
     id: "networking-practice",
     title: "Networking and Troubleshooting Practice",
     category: "networking",
-    summary: "This is the side of my background focused on core networking ideas like TCP/IP, DNS, VLANs, and firewalls.",
+    summary: "This side of my background is focused on core networking ideas like TCP/IP, DNS, VLANs, and firewalls.",
     challenge: "The goal was turning theory into something practical enough to troubleshoot and explain clearly.",
-    outcome: "I came away with a better grasp of the networking basics that show up constantly in infrastructure and support work.",
+    outcome: "I came away with a better grasp of the networking basics that show up all the time in infrastructure and support work.",
     tech: ["TCP/IP", "DNS", "VLANs", "Firewalls"],
     highlights: [
       "Worked through the practical side of network setup and diagnosis.",
@@ -87,7 +87,7 @@ const projects = [
     category: "support",
     summary: "A lot of my practical experience comes from support work, ticketing, and the habits that keep users and systems moving.",
     challenge: "The balancing act here is solving problems quickly while still building deeper technical skills over time.",
-    outcome: "It gave me a solid base for roles that sit somewhere between support, systems work, and infrastructure.",
+    outcome: "It gave me a solid base for roles that sit between support, systems work, and infrastructure.",
     tech: ["Technical Support", "Incident Management", "PowerShell", "PostgreSQL"],
     highlights: [
       "Worked with ticketing and incident-driven support workflows.",
@@ -117,7 +117,7 @@ const contacts = [
   {
     title: "Portfolio Repository",
     value: "github.com/gregdeveau/Portfolio",
-    note: "This portfolio is built and deployed from the same repository, even though my public project history is still pretty small right now.",
+    note: "This portfolio is built and deployed from the same repository, even though my public project history is still small right now.",
     href: "https://github.com/gregdeveau/Portfolio",
   },
   {
@@ -134,7 +134,7 @@ const state = {
   theme: getTheme(),
   repos: [],
   githubStatus: "idle",
-  githubMessage: "This section pulls in live GitHub data, even though my public repo history is still pretty small right now.",
+  githubMessage: "This section pulls in live GitHub data, even though my public repo history is still small right now.",
   activeProjectId: null,
 };
 
@@ -237,7 +237,7 @@ function renderShell() {
             <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
               <div class="panel p-6 sm:p-8">
                 <p class="section-kicker">About</p>
-                <h2 class="section-title">The kind of work I naturally lean toward is systems, troubleshooting, and keeping things running smoothly.</h2>
+                <h2 class="section-title">I naturally lean toward systems work, troubleshooting, and keeping things running smoothly.</h2>
               </div>
               <div class="grid gap-6 md:grid-cols-2">
                 <article class="panel p-6 sm:p-8">
@@ -257,7 +257,7 @@ function renderShell() {
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p class="section-kicker">Skills</p>
             <h2 class="section-title">These are the main strengths I would want an employer to notice first.</h2>
-            <p class="section-copy">I am keeping this focused on the bigger things that best represent how I work, instead of listing every tool I have touched.</p>
+            <p class="section-copy">I kept this focused on the bigger things that best represent how I work instead of listing every tool I have touched.</p>
             <div id="skills-grid" class="mt-8 grid gap-6 lg:grid-cols-3"></div>
           </div>
         </section>
@@ -286,7 +286,7 @@ function renderShell() {
               <div class="max-w-3xl">
                 <p class="section-kicker">GitHub API</p>
                 <h2 class="section-title">My public repositories, loaded live from GitHub.</h2>
-                <p class="section-copy">My GitHub is still a work in progress, but I still wanted this section to use real live data instead of fake placeholders.</p>
+                <p class="section-copy">My GitHub is still a work in progress, but I wanted this section to use real live data instead of placeholders.</p>
               </div>
               <button id="refresh-repos" class="secondary-button text-sm font-semibold" type="button">Refresh Repositories</button>
             </div>
@@ -298,7 +298,7 @@ function renderShell() {
         <section id="contact" class="section-wrap pb-20">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p class="section-kicker">Contact</p>
-            <h2 class="section-title">A few public places to find my work and connect with me.</h2>
+            <h2 class="section-title">A few public places to find my work and connect.</h2>
             <div id="contact-grid" class="mt-8 grid gap-6 lg:grid-cols-3"></div>
           </div>
         </section>
